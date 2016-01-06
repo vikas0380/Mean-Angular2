@@ -1,0 +1,26 @@
+ <html>
+      <head>
+        <title>Angular 2 QuickStart</title>        
+        <script src="https://code.angularjs.org/tools/typescript.js"></script>
+        <script src="https://rawgithub.com/systemjs/systemjs/0.19.6/dist/system.js"></script>   
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+        <script>
+            System.config({
+                transpiler: 'typescript',
+                typescriptOptions: { emitDecoratorMetadata: true },
+                packages: {'Home': {defaultExtension: 'ts'}}
+            });               
+            
+         System.import('angular2/platform/browser').then(function(ng){
+        System.import('Home/app').then(function(src) {
+          ng.bootstrap(src.AppComponent);
+        });
+      });       
+        </script>
+      </head>
+      <body>
+        <my-app>loading...</my-app>
+      </body>
+    </html>
