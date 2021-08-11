@@ -1,6 +1,6 @@
 # Mean-Angular2
 
-Developing mean application with Angular 2.0
+Developing mean application with Angular 2.0 alpha
 
 ## Running it
 
